@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
     <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
-                
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/6cc23412c1.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+
     <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
+
+    <title>theboywhodesigns</title>
+  
+    <link rel="icon" href="img/logo.svg">
+
+    
 </head>
 <body>
     <!--NAV Bar-->
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg p-0 fixed-top m-auto" id="mynav">
+      <nav class="navbar navbar-expand-lg p-0 fixed-top m-auto nav-color" id="mynav">
         <div class="container">
           <a class="navbar-brand" href="#home"> 
             <img class="logo" src="img/logo.svg" alt="logo" class="img-fluid">
@@ -98,23 +103,23 @@
     <div class="div-anime" data-x="370" style=" height:20px; width: 20px; border-radius: 50px; background-color: #F4E870; margin: 10px; " >  </div>
     </div> -->
     <!--END of NavBar-->
-    <section class="text-dark vh-100 d-flex align-items-center " id="aboutme">
+    <section class="text-dark vh-100 d-flex align-items-center overflow-hidden" id="aboutme">
       <!-- <div class="d-flex justify-content-between w-100" style="position: absolute; width: 12.5%; height: 50%;">
      <div class="bg-danger " style="width: 12.5%; height: 12.5%;  z-index: 1;"> </div>
      <div class="bg-primary " style="width: 12.5%; height: 12.5%;  z-index: 1;"> </div>
     </div> -->
-      <div class="container" >
-          <div class="row">
-              <div class="col-lg-6">
-                  <div class=""><img class="favicon"  src="/img/dp.jpg" alt="..." /></div>
+      <div class="container">
+          <div class="about">
+              <div class="favicon-container">
+                  <img  class="favicon" src="/img/dp.jpg" alt="..." />
               </div>
-              <div class="col-lg-6" style="margin-left: -4%;" >
-                  
-                      <h2 class="display-4 text-uppercase custom-heading">About</h2>
-                      <h2 class="display-4 text-uppercase custom-heading" style="margin-inline-start: -.6rem;">Me!</h2>
-                      <p class="" style="text-align: justify;margin-inline-start: .35rem;">prithvi heta maranir pura, tar pl nai, pund o guta , kal achusda sjkdajsdsd asd as d asdas das fas fa,prithvi heta maranir pura, 
+              <div class="about-desc" >
+                      <h2 class="el display-4 text-uppercase custom-heading">About</h2>
+                      <h2 class="el display-4 text-uppercase custom-heading" style="margin-inline-start: -.4rem;">Me!</h2> 
+                      <!-- style="margin-inline-start: -.6rem;" -->
+                      <p class="pl" style="text-align: justify;">prithvi heta maranir pura, tar pl nai, pund o guta , kal achusda sjkdajsdsd asd as d asdas das fas fa,prithvi heta maranir pura, 
                         tar pl nai, pund o guta , kal achusda sjkdajsdsd asd as d asdas das fas fa,</p>
-                  
+                        <!-- margin-inline-start: .35rem; -->
                 </div>
               </div>
               <div class="gold-back js-parallax-back" data-rate="-.025" data-direction="vertical" id="g-back"></div>
@@ -126,9 +131,9 @@
         
       <div class="container align-items-center justify-content-center" >
         <!-- style="z-index: 2;" -->
-          <div class="row align-items-center justify-content-center text-white" style="transform: translateY(2.5rem) ;">
-            <span class="text-center txt-head">
-              <h1>SERVICES</h1>
+          <div class="row align-items-center justify-content-center text-white" >
+            <span class=" txt-head">
+              SERVICES
             </span>
               <div class="col-lg-4 ds">
                   <h3 class="text-uppercase hd">brand identity</h3>
@@ -139,8 +144,9 @@
                   <p class="para">Lorem ipsum dolor sit amet, 
                                 consectetur adipisicing elit.</p>
               </div>
+              <!-- style="margin-top:-1.1rem;" -->
               <div class="col-lg-4 ds">
-                  <h3 class="text-uppercase hd" style="margin-top:-1.1rem;">social media designs</h3>
+                  <h3 class="text-uppercase hd" >social media designs</h3>
                   <p class="para">Lorem ipsum dolor sit amet, 
                                 consectetur adipisicing elit.</p>
               </div>
@@ -155,17 +161,20 @@
                                 consectetur adipisicing elit.</p>
               </div>
               <div class="col-lg-4 ds">
-                  <h3 class="text-uppercase hd" style="margin-top:-1.1rem;">logo animation/intro</h3>
+                <!-- style="margin-top:-1.1rem;" -->
+                  <h3 class="text-uppercase hd" >logo animation/intro</h3>
                   <p class="para">Lorem ipsum dolor sit amet, 
                                 consectetur adipisicing elit.</p>
               </div>
               <div class="col-lg-4 ds">
-                  <h3 class="text-uppercase hd" style="margin-top:-2.2rem;">motion graphic/animated video</h3>
+                <!-- style="margin-top:-2.2rem;" -->
+                  <h3 class="text-uppercase hd">motion graphic/animated video</h3>
                   <p class="para">Lorem ipsum dolor sit amet, 
                                 consectetur adipisicing elit.</p>
               </div>
               <div class="col-lg-4 ds">
-                  <h3 class="text-uppercase hd" style="margin-top:-1.1rem;">Kinetic typography</h3>
+                <!-- style="margin-top:-1.1rem;" -->
+                  <h3 class="text-uppercase hd" >Kinetic typography</h3>
                   <p class="para">Lorem ipsum dolor sit amet, 
                                 consectetur adipisicing elit.</p>
               </div>
@@ -188,90 +197,78 @@
         </video>
         </div>
         <!-- contact me form -->
-        <div class="row" style="z-index:10;position:absolute; width: 75%;">
+        <div class="row text-white" style="z-index:10;position:absolute; width: 75%;">
           
             <div class="col-lg-6">
-              <h2 class="display-4">END</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, 
-                mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, 
-                ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
+              <h1 class="display-1" style="font-weight: 700;" >LET'S <br>WORK<br> TOGETHER!</h1>
+              <p>
+                You can contact me by filling the form or by <br> clicking any of the links below.
+              </p>
                       </div>
             <div class="col-lg-6" >
                 <div class="card-back">
                   
                   <form class="card-f" action="{{ route('contact.store') }}" method="POST">
                     <div class="fg">
-                      
                       <input type="text" class="fc" id="name" name="name" placeholder="Name">
                     </div>
                     <div class="fg">
                       <input type="email" class="fc" id="email" name="email" placeholder="Email">
                     </div>
                     <div class="fg">
-                      <span><i class="fa fa-whatsapp" aria-hidden="true"></i></span>
-                      <input type="phone" class="fc" id="email" name="email" placeholder="Whatsapp No">
+
+                      <input type="phone" class="fc" id="email" name="email" placeholder="Whatsapp No.">
                     </div>
                     <div class="fg">
-                      <textarea class="fc" id="message" name="message" rows="3"placeholder="Your message"></textarea>
+                      <textarea class="fc" id="message" name="message" rows="num" cols="num"  placeholder="Your message"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
                 </div>
               </div>
-            
           </div>
-        
-
-      
     </section>
-
-    <section id="portfolio">
-      <div class="container px-5 " style="z-index: 2;">
-          <div class="row">
-              <div class="col-lg-6">
-                  <div data-aos="fade-up" class="p-5" ><img class="img-fluid rounded-circle" src="/img/game.png" alt="..." /></div>
-              </div>
-              <div class="col-lg-6 d-flex " >
-                  <div class=""  class="p-5">
-                      <h2 class="display-4" >END</h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod aliquid, 
-                        mollitia odio veniam sit iste esse assumenda amet aperiam exercitationem, 
-                        ea animi blanditiis recusandae! Ratione voluptatum molestiae adipisci, beatae obcaecati.</p>
-                  </div>
-                </div>
-              </div>
-      </div>
-    </section>
+    <!--Section: Contact-->
+    
+    
     
    
 
   </div>
-    <!--banner type-->
-    <!--END banner-->
-    
-    <!--sections to show react insta uploads-->
-    <!--END sections to show react insta uploads-->
+  <footer id="footer">
+    <div class="d-flex justify-content-around m-auto align-items-center" style="width: 75vw; height: 15vh;">
+      
+        <div class="col-4" class="foot-link">
+          
+            <a style="text-decoration: none;color:white; font-size: 1.2rem;" href="mailto:freelance.prithvi@gmail.com ">
+              <i class="fa-regular fa-envelope "></i> freelance.prithvi@gmail.com
+            </a>
+            <br>
+            <a style="text-decoration: none;color:white; font-size: 1.2rem;" href="tel:+91 84539 69124">
+              <i class="fa-solid fa-mobile-screen "></i> +91 84539 69124
+            </a>
+        </div>
 
-
-    <!--Carousel of Different category of designs-->
-    <!--END of Different category of designs-->
-
-
-    <!--Contact me -->
-    <!--END of Contact me-->
-
-    <!--END of Contact me-->
-    <!--END of Contact me-->
-    
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-    offset: 250,
-    duration: 400,
-    easing: 'ease-in-sine',
-  });
-
-    </script> -->
+        <div class="col-4">
+          <div class="social">
+            <ul>
+              <li><a href="https://www.facebook.com/prithvirai06/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="https://wa.me/918453969124?text=Hello%2C%20I%20have%20a%20query%20about%20designs!"  target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+              <li><a href="https://www.instagram.com/the.boy.who.designs/" target="_blank"><i class="fa-brands fa-instagram" ></i></a></li>
+              <li><a href="https://www.linkedin.com/in/prithviraj-rai-9b2a411b3/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4 text-end " style="text-decoration: none;color:white; font-size: 1.2rem;">
+          <h5 class="">Design by Recker</h5>
+          copywrite @<script> // get internet year 
+          document.write(new Date().getFullYear());
+          </script>-
+        </div>
+     
+    </div>
+  </footer>
+  <!-- Footer -->
 <script src="/js/index.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
