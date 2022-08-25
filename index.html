@@ -8,7 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
-    <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  
     <script src="https://kit.fontawesome.com/6cc23412c1.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -29,7 +31,7 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg p-0 fixed-top m-auto nav-color" id="mynav">
         <div class="container">
-          <a class="navbar-brand" href="#home"> 
+          <a class="navbar-brand" href="#"> 
             <img class="logo" src="img/logo.svg" alt="logo" class="img-fluid">
           </a>
           <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
@@ -44,7 +46,7 @@
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" id="as" href="#portfolio">PORTFOLIO</a>
+                <a class="nav-link" id="as" href="portfolio.html">PORTFOLIO</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="as" href="#servics">SERVICES</a>
@@ -58,16 +60,23 @@
       </nav>
       <!-- Navbar -->
       <!--Section: Design Block-->
-      <div class="all">
-      <section class="d-flex justify-content-around align-items-center text-white text-center" id="home">
+      <section style="position: relative;" >
+        <!-- Here is the heading with 8 image gallery -->
+        <div class="video-container2">
+            <video class="video2"  autoplay muted>
+              <source src="/img/animated/lm_finale.mp4" type="video/mp4">
+            </video>
+          </div>
+       
+    </section>
+
+      <!-- <section class="d-flex justify-content-around align-items-center text-white text-center" id="home">
         <div class="container d-flex align-items-center text-center position-relative" style="width: 60%;" >
-            <!-- Masthead Avatar Image-->
-            <!-- <img class="banner h-25 w-25" src="/img/logo.svg" alt="Animating_logo" /> -->
-            <!-- Masthead Heading-->
+          
             <svg class="svg" version="1.1" fill="none" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
             <style type="text/css">
-              <!-- .st0{fill:url(#SVGID_1_);} -->
+              
             </style>
             <g id="BLACK">
               <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="20.3542" y1="378.1098" x2="340.8159" y2="58.1849">
@@ -89,22 +98,18 @@
                 h8.93V147.51z" stroke="#CCA841" stroke-width="3"/>
             </g>
             </svg>
-            <!-- Icon Divider-->
-            <div  class="d-flex text-center m-auto">
+            Icon Divider-->
+            <!-- <div  class="d-flex text-center m-auto">
              <h4 class="text-uppercase c-l"
                id="txt"></h4>
 
             </div>
             </div>
-    </section>
+    </section> --> 
       <!--Section: Design Block-->
-    <!-- <div class="d-flex flex-grow justify-content-start flex-row divs position-relative"> 
-    <div class="div-anime" data-x="270" style=" height:20px; width: 20px; border-radius: 50px; background-color:#CCA841; margin: 10px; " >  </div>
-    <div class="div-anime" data-x="180" style=" height:20px; width: 20px; border-radius: 50px; background-color:#E7D157; margin: 10px;"   >  </div>
-    <div class="div-anime" data-x="370" style=" height:20px; width: 20px; border-radius: 50px; background-color: #F4E870; margin: 10px; " >  </div>
-    </div> -->
+   
     <!--END of NavBar-->
-    <section class="text-dark vh-100 d-flex align-items-center overflow-hidden" id="aboutme">
+    <section class="text-dark bg-white vh-100 d-flex align-items-center" id="aboutme">
       <!-- <div class="d-flex justify-content-between w-100" style="position: absolute; width: 12.5%; height: 50%;">
      <div class="bg-danger " style="width: 12.5%; height: 12.5%;  z-index: 1;"> </div>
      <div class="bg-primary " style="width: 12.5%; height: 12.5%;  z-index: 1;"> </div>
@@ -115,10 +120,11 @@
                   <img  class="favicon" src="/img/dp.jpg" alt="..." />
               </div>
               <div class="about-desc" >
-                      <h2 class="el display-4 text-uppercase custom-heading">About</h2>
-                      <h2 class="el display-4 text-uppercase custom-heading" style="margin-inline-start: -.4rem;">Me!</h2> 
+                      <h2 class="el display-4 text-uppercase custom-heading" style="font-weight: 600 !important;">About</h2>
+                      <h2 class="el display-4 text-uppercase custom-heading" style="margin-inline-start: -.6rem; font-weight: 600 !important;">Me!</h2> 
                       <!-- style="margin-inline-start: -.6rem;" -->
-                      <p class="pl" style="text-align: justify;">prithvi heta maranir pura, tar pl nai, pund o guta , kal achusda sjkdajsdsd asd as d asdas das fas fa,prithvi heta maranir pura, 
+                      <p class="pl" style="text-align: justify;">prithvi heta maranir pura, tar pl nai, pund o guta ,
+                         kal achusda sjkdajsdsd asd as d asdas das fas fa,prithvi heta maranir pura, 
                         tar pl nai, pund o guta , kal achusda sjkdajsdsd asd as d asdas das fas fa,</p>
                         <!-- margin-inline-start: .35rem; -->
                 </div>
@@ -169,7 +175,7 @@
               </div>
               <div class="col-lg-4 ds">
                 <!-- style="margin-top:-2.2rem;" -->
-                  <h3 class="text-uppercase hd">motion graphic/animated video</h3>
+                  <h3 class="text-uppercase hd">mo-graph/animated video</h3>
                   <p class="para">Lorem ipsum dolor sit amet, 
                                 consectetur adipisicing elit.</p>
               </div>
@@ -189,20 +195,20 @@
           </div>
       </div>
     </section>
-    <section id="contact">
+    <section id="contact" style="width: 100%; margin:0">
     <!-- <section id="contact" style="position: relative; z-index: -5;"> -->
       <!-- video on the background -->
       
         <div class="video-container">
           <video autoplay loop muted>
-            <source src="/img/wb_trim.mp4" type="video/mp4">
+            <source src="/img/smc/bgl.m4v" type="video/mp4">
           </video>
         </div>
         <!-- contact me form -->
-        <div class="row text-white" style="z-index:10;position:absolute; width: 75%;">
+        <div class="row text-white" style="z-index:10;position:relative; width: 75%;">
           
             <div class="col-lg-6">
-              <h1 class="display-1" style="font-weight: 700;" >LET'S <br>WORK<br> TOGETHER!</h1>
+              <h1 class="display-1" style="font-weight: 700; letter-spacing: .5rem;" >LET'S <br>WORK<br> TOGETHER!</h1>
               <p>
                 You can contact me by filling the form or by <br> clicking any of the links below.
               </p>
@@ -236,18 +242,16 @@
     
    
 
-  </div>
+
   <footer id="footer">
     <div class="d-flex justify-content-around m-auto align-items-center" style="width: 75vw; height: 15vh;">
       
         <div class="col-4" class="foot-link">
           
-            <a style="text-decoration: none;color:white; font-size: 1.2rem;" href="mailto:freelance.prithvi@gmail.com">
-              <i class="fa-regular fa-envelope "></i> freelance.prithvi@gmail.com
+            <a style="text-decoration: none;color:white; font-size: 1.2rem;" href="mailto:freelance.prithvi@gmail.com"> freelance.prithvi@gmail.com
             </a>
             <br>
-            <a style="text-decoration: none;color:white; font-size: 1.2rem;" href="tel:+91 84539 69124">
-              <i class="fa-solid fa-mobile-screen "></i> +91 84539 69124
+            <a style="text-decoration: none;color:white; font-size: 1.2rem;" href="tel:+91 84539 69124">+91 84539 69124
             </a>
         </div>
 
@@ -261,9 +265,9 @@
             </ul>
           </div>
         </div>
-        <div class="col-4 text-end " style="text-decoration: none;color:white; font-size: 1.2rem;">
-          <h5 class="">Design by <a  style="text-decoration: dashed; color: azure; word-wrap: none; "href="mailto:dabhishek878@gmail.com">Recker</a></h5> 
-          copyright @ 2022- all rights reserved.
+        <div class="col-4 text-end" >
+          <a style="text-decoration: none; color:white;font-size: 1.2rem;" "  data-bs-toggle="tooltip"  href="mailto:dabhishek878@gmail.com" title="+91 70866 55769">Design by Recker</a>
+          <br><a style="text-decoration: none; color:white; font-size: 1.2rem;" id="date"></a>
         </div>
      
     </div>
@@ -272,7 +276,7 @@
   <script> // get internet year 
     var p=document.getElementById('date');
     var date=new Date().getFullYear();
-    p.innerHTML=date;
+    p.innerHTML="copyright @"+date+"- all rights reserved.";
     </script>
 <script src="/js/index.js"></script>
 
