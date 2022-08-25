@@ -76,9 +76,9 @@ body {
 .nav-link:hover:before {
   width: 100%;
 }
-.nav-item a::selection {
-  background-color: var(--primary-color);
-  color: var(--bg-color);
+.nav-item a:visited {
+  
+  color: white;
 }
 
 
@@ -630,6 +630,10 @@ textarea {
   width: 100%;
   height: 100%;
   overflow: hidden;
- 
-  
+}
+.row1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
 }
