@@ -76,6 +76,12 @@ body {
 .nav-link:hover:before {
   width: 100%;
 }
+.nav-item a::selection {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+}
+
+
 
 .nav-color {
   background-color: #0d0d0df2;
@@ -87,7 +93,7 @@ section {
   display: flex;
   margin: auto;
   width: 100%;
-  min-height: 40em;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -544,7 +550,6 @@ textarea {
 .img-contain img:hover {
   transform: scale(1.5);
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.75));
-
   transition: ease-in-out 0.2s;
 }
 .head {
