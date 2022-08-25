@@ -7,51 +7,51 @@ var gback= document.getElementById('g-back');
 const lang=["Hello!","नमस्ते!","নমস্কার!","こんにちは!","Bonjour!","Привет!","¡Hola!","Salve!","Ciao!"];
 
 // change id='txt' text to "hi", "bye", "hs", "goodbye" after 1 second
-let txt=document.getElementById('txt');
+// let txt=document.getElementById('txt');
 
-// change id='txt' text to "hi", "bye", "hs", "goodbye" after 1 second
-let index=0;
-function anim(){
-txt.innerHTML=lang[index];
-txt.classList.add("c-lang");
-//animatetext(lang[index]);
-if(index==lang.length-1){
-  index=0;
-}
-else{
-  index++;
-}
-setInterval(function(){
-  txt.classList.remove("c-lang");},2000);
-setTimeout(anim,4000);
-}
-window.onload = anim;
+// // change id='txt' text to "hi", "bye", "hs", "goodbye" after 1 second
+// let index=0;
+// function anim(){
+// txt.innerHTML=lang[index];
+// // txt.classList.add("c-lang");
+// //animatetext(lang[index]);
+// if(index==lang.length-1){
+//   index=0;
+// }
+// else{
+//   index++;
+// }
+// setInterval(function(){
+//   txt.classList.remove("c-lang");},2000);
+// setTimeout(anim,4000);
+// }
+// window.onload = anim;
 
-  let index1=0;
-  function animatetext(value){
-  "use strict";
-  let txt1=document.getElementById('txt');
-  let i=0;
-  let speed=100;
-  let text=value;
-  let index1=0;
-  let timer=setInterval(function(){
-    if(i<text.length){
-      txt1.innerHTML+=text.charAt(i);
-      i++;
-    }
-    else{  
-      clearInterval(timer);
-    }
-  },speed);
-}
+//   let index1=0;
+//   function animatetext(value){
+//   "use strict";
+//   let txt1=document.getElementById('txt');
+//   let i=0;
+//   let speed=100;
+//   let text=value;
+//   let index1=0;
+//   let timer=setInterval(function(){
+//     if(i<text.length){
+//       txt1.innerHTML+=text.charAt(i);
+//       i++;
+//     }
+//     else{  
+//       clearInterval(timer);
+//     }
+//   },speed);
+// }
 
-var targ=document.querySelectorAll('section:nth-child(even)');
-var len=targ.length;
-for(var i=0;i<len;i++){
-  //targ[i].style.backgroundColor="white";
-  targ[i].classList.add("alt-color");
-}
+// var targ=document.querySelectorAll('section:nth-child(even)');
+// var len=targ.length;
+// for(var i=0;i<len;i++){
+//   //targ[i].style.backgroundColor="white";
+//   targ[i].classList.add("alt-color");
+// }
 
 var d=document.querySelectorAll('.ds');
 var h=document.querySelectorAll('.hd');
@@ -78,25 +78,26 @@ d[i].addEventListener("mouseout", function( event ){
 });
 }
 
-let an=anime({
-  targets: '.st0',
-  strokeDashoffset: [anime.setDashoffset, 0],
-  easing: 'easeInOutSine',
-  duration: 2000,
-  delay: function(el, i) { return i * 250},
-  direction: 'alternate',
-  loop: true
-});
+// let an=anime({
+//   targets: '.st0',
+//   strokeDashoffset: [anime.setDashoffset, 0],
+//   easing: 'easeInOutSine',
+//   duration: 2000,
+//   delay: function(el, i) { return i * 250},
+//   direction: 'alternate',
+//   loop: true
+// });
 
 var abt=anime.timeline({
   
-  duration: 1000,
+  duration: 800,
   autoplay: false,
 });
 abt.add({
   targets: '.el',
   opacity: [0, 1],
   easing: 'easeOutExpo',
+  scale:[0.5,1],
   translateX: ["120%","0%"],
   delay: function(el, i, l) { 
     return i * 100; }
