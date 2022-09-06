@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+     -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   
-    <script src="https://kit.fontawesome.com/6cc23412c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
@@ -34,11 +37,11 @@
           <a class="navbar-brand" href="#"> 
             <img class="logo" src="img/logo.svg" alt="logo" class="img-fluid">
           </a>
-          <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          <!-- <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
             data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <i class="fa-light fa-bars"></i>
-          </button>
+          </button> -->
           <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto m-auto">
               <li class="nav-item">
@@ -60,7 +63,7 @@
       </nav>
       <!-- Navbar -->
       <!--Section: Design Block-->
-      <section style="position: relative;" >
+      <section class="section-1"style="position: relative;" >
         <!-- Here is the heading with 8 image gallery -->
         <div class="video-container2">
             <video class="video2"  autoplay muted>
@@ -109,7 +112,7 @@
       <!--Section: Design Block-->
    
     <!--END of NavBar-->
-    <section class="text-dark bg-white vh-100 d-flex align-items-center" id="aboutme">
+    <section class="section-2" id="aboutme" style="background-color: #fff; color:black">
       <!-- <div class="d-flex justify-content-between w-100" style="position: absolute; width: 12.5%; height: 50%;">
      <div class="bg-danger " style="width: 12.5%; height: 12.5%;  z-index: 1;"> </div>
      <div class="bg-primary " style="width: 12.5%; height: 12.5%;  z-index: 1;"> </div>
@@ -117,11 +120,11 @@
       <div class="container">
           <div class="about">
               <div class="favicon-container">
-                  <img  class="favicon" src="/img/dp.jpg" alt="..." />
+                  <img  class="favicon" src="/img/dmp.avif" alt="..." />
               </div>
               <div class="about-desc" >
-                      <h2 class="el display-4 text-uppercase custom-heading" style="font-weight: 600 !important;">About</h2>
-                      <h2 class="el display-4 text-uppercase custom-heading" style="margin-inline-start: -.6rem; font-weight: 600 !important;">Me!</h2> 
+                      <h2 class="el  text-uppercase custom-heading" style="font-weight: 600">About</h2>
+                      <h2 class="el text-uppercase custom-heading" style="margin-inline-start: -.6rem; font-weight: 600 !important;">Me!</h2> 
                       <!-- style="margin-inline-start: -.6rem;" -->
                       <p class="pl" style="text-align: justify;">prithvi heta maranir pura, tar pl nai, pund o guta ,
                          kal achusda sjkdajsdsd asd as d asdas das fas fa,prithvi heta maranir pura, 
@@ -136,12 +139,13 @@
     <!--Section: SEVICES-->
     <section id="servics">
         
-      <div class="container align-items-center justify-content-center" >
+      <div class="g-container align-items-center justify-content-center" >
         <!-- style="z-index: 2;" -->
+        <span class="txt-head">
+          SERVICES
+        </span>
           <div class="row align-items-center justify-content-center text-white" >
-            <span class=" txt-head">
-              SERVICES
-            </span>
+            
               <div class="col-lg-4 ds">
                   <h3 class="text-uppercase hd">brand identity</h3>
                   <p class="para">kala kala kala kala pl</p>
@@ -158,7 +162,7 @@
                                 consectetur adipisicing elit.</p>
               </div>
               <div class="col-lg-4 ds">
-                  <h3 class="text-uppercase hd">ooh media</h3>
+                  <h3 class="text-uppercase hd">outdoor advertising</h3>
                   <p class="para">Lorem ipsum dolor sit amet, 
                                 consectetur adipisicing elit.</p>
               </div>
@@ -205,7 +209,7 @@
           </video>
         </div>
         <!-- contact me form -->
-        <div class="row1 text-white" style="position:relative; width: 75%;">
+        <div class="row1 text-white">
           
             <div class="v6">
               <h1 class="display-1" style="font-weight: 700; letter-spacing: .5rem;" >LET'S <br>WORK<br> TOGETHER!</h1>
@@ -213,7 +217,7 @@
                 You can contact me by filling the form or by <br> clicking any of the links below.
               </p>
           </div>
-            <div class="v6" >
+            <div class="" >
                 <div class="card-back">
                   
                   <form class="card-f" action="{{ route('contact.store') }}" method="POST">
@@ -228,7 +232,7 @@
                       <input type="phone" class="fc" id="email" name="email" placeholder="Whatsapp No.">
                     </div>
                     <div class="fg">
-                      <textarea class="fc" id="message" name="message" rows="num" cols="num"  placeholder="Your message"></textarea>
+                      <textarea class="fc" id="message" name="message" rows="num" cols="num"  placeholder="Message"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
@@ -244,14 +248,14 @@
 
 
   <footer id="footer">
-    <div class="d-flex justify-content-around m-auto align-items-center" style="width: 75vw; height: 15vh;">
+    <div class="d-flex1 justify-content-around m-auto align-items-center">
       
         <div class="col-4" class="foot-link">
           
-            <a style="text-decoration: none;color:white; font-size: 1.2rem;" href="mailto:freelance.prithvi@gmail.com"> freelance.prithvi@gmail.com
+            <a class="ft-head" href="mailto:freelance.prithvi@gmail.com"> freelance.prithvi@gmail.com
             </a>
             <br>
-            <a style="text-decoration: none;color:white; font-size: 1.2rem;" href="tel:+91 84539 69124">+91 84539 69124
+            <a class="ft-head" href="tel:+91 84539 69124">+91 84539 69124
             </a>
         </div>
 
@@ -265,9 +269,9 @@
             </ul>
           </div>
         </div>
-        <div class="col-4 text-end">
-          <a style="text-decoration: none; color:white;font-size: 1.2rem;" "  data-bs-toggle="tooltip"  href="#" title="#">Design by XYZ</a>
-          <br><a style="text-decoration: none; color:white; font-size: 1.2rem;" id="date"></a>
+        <div class="col-4 text-end" style=" text-align: end;">
+          <a class="ft-head"   data-bs-toggle="tooltip"  href="mailto:dabhishek878@gmail.com" title="+91 70866 55769">Design by Recker</a>
+          <br><a class="ft-head" id="date"></a>
         </div>
      
     </div>
@@ -276,11 +280,11 @@
   <script> // get internet year 
     var p=document.getElementById('date');
     var date=new Date().getFullYear();
-    p.innerHTML="copyright @"+date+"- all rights reserved.";
+    p.innerHTML="copyright @"+date+".";
     </script>
 <script src="/js/index.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
 </body>
 </html>
