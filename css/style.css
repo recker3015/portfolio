@@ -89,19 +89,32 @@ body {
   text-transform: uppercase;
 }
 nav{
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: 100;
+  
 }
 .row{
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
   margin:auto;
 }
-
+.navbar{
+  display: flex;
+  max-width: 75%;
+  margin-inline: auto;
+  justify-content: space-between;
+  align-items: center;
+}
 .nav-color {
   background-color: #0d0d0df2;
+}
+.navbar-brand{
+ display: flex;
+ align-items: center;
+ padding: 0.5rem;
 }
 .logo {
   height: 4.8rem;
@@ -186,22 +199,9 @@ section {
     left: 100%;
   }
 }
-.gold-back {
-  /* position: absolute;
-  z-index: -1;
-  background-color: #e7d15794;
-  width: 75vw;
-  height: 77vh;
-  margin: auto;
-  top: 6rem;
-  left: 0;
-  right: 0; */
-  transform: translateX(-120%);
-}
 
-.js-parallax-back {
-  transition: 1s;
-}
+
+
 .custom-heading {
   font-family: var(--font);
   font-weight: 500;
@@ -220,18 +220,17 @@ section {
   top: 10rem;
   right: 0;
   /* transition: cubic-bezier(0.02, 0.54, 0.1, 1) .7s; */
-  transform: translateY(0%);
-  animation: backIn 0.7s forwards;
+  
+  animation: backIn 1s forwards cubic-bezier(0.22, 0.61, 0.36, 1);
+  
 }
 @keyframes backIn {
   from {
-    left: 0;
-  }
-  50% {
-    left: 80;
+    transform: translateX(-120%);
   }
   to {
-    left: 100;
+    
+    transform: translateX(0%);
   }
 }
 
@@ -784,6 +783,14 @@ textarea {
   to {opacity: 1}
 }
 
+.navbar-toggler{
+  display: none;  
+}
+.section-2{
+  background-color: #fff; 
+  color:black
+}
+
 
 @media (max-width: 768px) {
  
@@ -826,7 +833,8 @@ textarea {
   margin: 0;
   padding: 0;
   width: 100%;
-  
+  background-color: #fff; 
+  color:black
 }
 .container {
   display: flex;
@@ -840,18 +848,10 @@ textarea {
   padding: 0;
 }
 .gold-back-reavel-in {
-  position: absolute;
-  z-index: -1;
-  background-color: #e7d157a2;
   height: 88%;
   min-width: 100%;
   margin:auto 0;
-  /* margin: auto; */
-  top: 10rem;
-  right: 0;
-  /* transition: cubic-bezier(0.02, 0.54, 0.1, 1) .7s; */
-  transform: translateY(0%);
-  animation: backIn 0.7s forwards;
+
 }
 .video-container2 {
   position: absolute;
@@ -916,5 +916,37 @@ textarea {
   opacity: 0;
   margin-top: 2rem;
   /* background-color: aqua; */
+}
+.navbar{
+  display: flex;
+  justify-content: start;
+  max-width: 90%;
+  margin-inline: auto;
+}
+.collapse{
+  display: none;
+}
+.navbar-toggler{
+  
+  display: flex;
+  flex-grow: 1;
+  justify-content: end;
+  background-color: #0d0d0d;
+  color:var(--primary-color);
+  border: none;
+  outline: none;
+  border-radius: 0;
+  padding: 0.5rem;
+  font-size: 4rem;
+}
+.navbar-toggler:hover{
+  
+  background-color: #0d0d0d;
+  color:var(--primary-color);
+  border: none;
+  outline: none;
+  border-radius: 0;
+  padding: 0.5rem;
+  font-size: 4rem;
 }
 }

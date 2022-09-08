@@ -4,7 +4,7 @@ var gback= document.getElementById('g-back');
 
 // var gback2= document.getElementsByClassName('g-back');
 //array  of languages
-const lang=["Hello!","नमस्ते!","নমস্কার!","こんにちは!","Bonjour!","Привет!","¡Hola!","Salve!","Ciao!"];
+//const lang=["Hello!","नमस्ते!","নমস্কার!","こんにちは!","Bonjour!","Привет!","¡Hola!","Salve!","Ciao!"];
 
 // change id='txt' text to "hi", "bye", "hs", "goodbye" after 1 second
 // let txt=document.getElementById('txt');
@@ -121,7 +121,7 @@ const about = document.querySelector('#aboutme');
 const aboutObserver = new IntersectionObserver(function(entries) {
   if(entries[0].isIntersecting) {
     gback.classList.add("gold-back-reavel-in");
-    gback.classList.remove("gold-back");
+    
     abt.play();
     aboutObserver.unobserve(about);
   }
