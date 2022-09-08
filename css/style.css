@@ -19,9 +19,14 @@ html {
   background-color: var(--bg-color);
 }
 
-
-nav {
+nav{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
   height: 5.8rem;
+  
 }
 .alt-color {
   background-color: rgb(255, 255, 255);
@@ -88,14 +93,8 @@ body {
 .text-uppercase{
   text-transform: uppercase;
 }
-nav{
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  
-}
+
+
 .row{
   display: grid;
   grid-template-columns: 4fr 4fr 4fr;
@@ -117,7 +116,8 @@ nav{
  padding: 0.5rem;
 }
 .logo {
-  height: 4.8rem;
+  height: 5rem;
+  padding: .2rem;
 }
 section {
   display: flex;
@@ -927,7 +927,6 @@ textarea {
   display: none;
 }
 .navbar-toggler{
-  
   display: flex;
   flex-grow: 1;
   justify-content: end;
@@ -936,17 +935,53 @@ textarea {
   border: none;
   outline: none;
   border-radius: 0;
-  padding: 0.5rem;
   font-size: 4rem;
+  padding: 1rem;
 }
-.navbar-toggler:hover{
+.logo {
+ 
+  padding-left: 0rem;
+}
+.navbar-open {
+  position:relative;
+  display: flex;
+}
+.navbar-nav{
+  flex-direction: column;
+  position: absolute;
+  justify-content: start;
+  align-items: center;
+  width: 100vw;
+  max-width: 90vw;
+  top:2rem;
+  right: 0rem;
+  background-color: #5293ddc4;
+  backdrop-filter: blur(10px);
+  border-radius: 0 0 2rem 2rem;
+}
+.nav-item{
+  margin-top: 2rem;
+  padding: 0;
+  line-height: 9rem;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.89);
+  text-decoration: none;
+  font-size: 3.5rem;
+  text-align: left;
+  letter-spacing: 0.4rem;
+  padding-bottom: 0.2rem;
   
-  background-color: #0d0d0d;
-  color:var(--primary-color);
-  border: none;
-  outline: none;
-  border-radius: 0;
-  padding: 0.5rem;
-  font-size: 4rem;
 }
+.fa-x {
+  transform: rotate(180deg);
+  transition: ease-out 0.2s;
+}
+.fa-bars{
+  transition: ease-out 0.2s;
+}
+
 }

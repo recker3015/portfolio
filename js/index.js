@@ -127,3 +127,16 @@ const aboutObserver = new IntersectionObserver(function(entries) {
   }
 } , { threshold: 0.5 });
 aboutObserver.observe(about);
+
+function resNav() {
+  let y=document.getElementById("ibar");
+   let x= document.getElementById("colNav");
+  if (x.className === "collapse") {
+    x.className = "navbar-open";
+    y.className = "fa-solid fa-x";
+  }
+  else {
+    x.className = "collapse";
+    y.className = "fa-solid fa-bars";
+  }
+}

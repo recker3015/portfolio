@@ -56,3 +56,16 @@ var io=new IntersectionObserver(function(entries){
     io.observe(item);
 }
 );
+function resNav() {
+  let y=document.getElementById("ibar");
+   let x= document.getElementById("colNav");
+  if (x.className === "collapse") {
+    x.className = "navbar-open";
+    y.className = "fa-solid fa-x";
+  }
+  else {
+    x.className = "collapse";
+    y.className = "fa-solid fa-bars";
+  }
+
+}

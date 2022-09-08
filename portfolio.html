@@ -38,13 +38,14 @@
         <a class="navbar-brand" href="index.html">
           <img class="logo" src="img/logo.svg" alt="logo" class="img-fluid">
         </a>
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" onclick="resNav()"
           data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
-          <i class="fa-solid fa-bars"></i>
+          <i id="ibar" class="a fa-solid fa-bars"></i>
+          
         </button>
-        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto m-auto">
+        <div class="collapse" id="colNav">
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" id="as" href="index.html">HOME</a>
             </li>
@@ -241,7 +242,11 @@
 
     </div>
   </footer>
-  <script> // get internet year 
+  <script>
+  //responsive nav
+  
+  // get internet year 
+
     var p = document.getElementById('date');
     var date = new Date().getFullYear();
     p.innerHTML = "copyright @" + date + ".";
