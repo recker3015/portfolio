@@ -208,6 +208,7 @@ section {
   font-size: 12.1rem;
   line-height: 0.9;
   text-align: left;
+  overflow: hidden;
 }
 
 .gold-back-reavel-in {
@@ -435,9 +436,12 @@ section {
   transition: ease-in-out 0.4s;
   padding: 5rem;
   margin: auto;
+  overflow: hidden;
 }
 .about-desc{
   margin-left: 4rem;
+  overflow: hidden;
+
 }
 .favicon {
   height: 49.0859rem;
