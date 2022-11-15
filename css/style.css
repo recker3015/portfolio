@@ -108,7 +108,7 @@ body {
   align-items: center;
 }
 .nav-color {
-  background-color: #0d0d0df2;
+  background-color: #0d0d0d;
 }
 .navbar-brand{
  display: flex;
@@ -351,14 +351,14 @@ section {
 }
 .video-container video {
   position: relative;
-  
   top: 0;
   left: 0;
   overflow: hidden;
   width: 100%;
   height: 100%;
   object-fit: cover;
- 
+  
+
 }
 .card-back {
   /* backdrop-filter: drop-shadow(0px 100px 10px #000); */
@@ -669,6 +669,7 @@ textarea {
   width: 100%;
   height: 100%;
   overflow: hidden;
+ 
 }
 .row1{
   display: flex;
@@ -791,12 +792,14 @@ textarea {
   color:black
 }
 
+/* For mobile  */
 
 @media (max-width: 768px) {
- 
-  .section-1{
-    height: 50vh;
+  
+  section{
+    min-height:50vh ;
   }
+ 
 .row{
   grid-template-columns: 2fr ;
   margin: auto;
@@ -848,7 +851,7 @@ textarea {
   padding: 0;
 }
 .gold-back-reavel-in {
-  height: 88%;
+  height: 86%;
   min-width: 100%;
   margin:auto 0;
 
@@ -873,6 +876,8 @@ textarea {
   flex-direction: column;
   margin: auto;
   width: 90vw;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 .v6{
   display: flex;
@@ -955,7 +960,7 @@ textarea {
   max-width: 90vw;
   top:2rem;
   right: 0rem;
-  background-color: #5293ddc4;
+  background-color: #939eaac4;
   backdrop-filter: blur(10px);
   border-radius: 0 0 2rem 2rem;
 }
@@ -982,6 +987,10 @@ textarea {
 }
 .fa-bars{
   transition: ease-out 0.2s;
+}
+.txt-head{
+ 
+  margin-top: 2.5rem;
 }
 
 }
