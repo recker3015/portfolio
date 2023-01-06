@@ -524,8 +524,7 @@ textarea {
   font-family: var(--font);
 }
 .social {
-  display: flex;
-  
+  display: flex; 
   flex-direction: row;
   margin: auto;
   width: 100%;
@@ -534,7 +533,6 @@ textarea {
 .social ul {
   padding: 2rem;
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
@@ -795,6 +793,9 @@ textarea {
   background-color: #fff; 
   color:black
 }
+.foot-text{
+  text-align: end;
+}
 
 /* For mobile  */
 
@@ -996,5 +997,38 @@ textarea {
  
   margin-top: 2.5rem;
 }
+.footer{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 
+ }
+ .foot-text
+ {
+  text-align: end;
+  order: 2;
+}
+.foot-detail{
+  order: 1;
+}
+.sos-link{
+  order: 3;
+}
+.social ul {
+display: grid;
+margin-left: -5rem;
+margin-top: -4rem ;
+grid-template-columns: repeat(4,1fr);
+}
+ 
+
+.social ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0rem;
+  transition: ease-in-out 0.2s;
+  justify-content: space-around;
+
+}
 }
