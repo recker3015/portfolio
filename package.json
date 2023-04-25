@@ -1,0 +1,14 @@
+{
+  "name": "3-d-paths-tubes-letter-s-copy",
+  "version": "1.0.0",
+  "description": "Scene exported with Spline",
+  "scripts": {
+    "start": "serve"
+  },
+  "devDependencies": {
+    "serve": "^13.0.2"
+  },
+  "dependencies": {
+    "@splinetool/runtime": "^0.9.304"
+  }
+}

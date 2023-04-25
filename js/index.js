@@ -113,7 +113,6 @@ abt.add({
       targets: '.favicon',
       easing: 'easeOutCubic',
       opacity: [0,1],
-      
     }, '-=700'
   );
 //intersection observer on about section to animate the text once the section is visible
